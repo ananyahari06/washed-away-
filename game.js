@@ -344,7 +344,7 @@ function resetGame() {
   lastFlip = 0;
   totalTime = 30;
   timeLeft = totalTime;
-  penalty = 2;
+  penalty = 1.7;
   gameEnded = false;
 }
 
@@ -436,4 +436,5 @@ function showDirectionFlash(direction) {
     onComplete: () => flash.destroy()
   });
 }
+
 
