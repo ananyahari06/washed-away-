@@ -435,5 +435,4 @@ function showDirectionFlash(direction) {
     ease: 'Cubic.easeOut',
     onComplete: () => flash.destroy()
   });
-
 }
