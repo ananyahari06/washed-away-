@@ -329,7 +329,7 @@ function handleBubbleHit(playerObj, bubbleObj) {
 
   // Time penalty
   timeLeft = Math.max(0, timeLeft - penalty);
-  penalty = Math.min(penalty + 0.5, 6);
+  penalty = Math.min(penalty + 0.2, 6);
 
   // Destroy bubble once hit
   bubbleObj.destroy();
@@ -344,7 +344,7 @@ function resetGame() {
   lastFlip = 0;
   totalTime = 30;
   timeLeft = totalTime;
-  penalty = 2;
+  penalty = 1.5;
   gameEnded = false;
 }
 
@@ -435,4 +435,5 @@ function showDirectionFlash(direction) {
     ease: 'Cubic.easeOut',
     onComplete: () => flash.destroy()
   });
+
 }
